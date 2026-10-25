@@ -14,6 +14,10 @@
   --accent: #d97757;
   --accent-hover: #c6613f;
   --accent-fg: #ffffff;
+  --neo-shadow: -4px -4px 10px #ffffff, 4px 4px 14px rgba(0, 0, 0, 0.06);
+  --neo-shadow-sm: -2px -2px 6px #ffffff, 2px 2px 8px rgba(0, 0, 0, 0.05);
+  --neo-shadow-inset: inset 2px 2px 5px rgba(0, 0, 0, 0.05), inset -2px -2px 5px #ffffff;
+  --neo-shadow-inset-sm: inset 1px 1px 3px rgba(0, 0, 0, 0.05), inset -1px -1px 3px #ffffff;
 }
 
 .dark {
@@ -27,6 +31,10 @@
   --accent: #d97757;
   --accent-hover: #e08b6e;
   --accent-fg: #141413;
+  --neo-shadow: -3px -3px 8px rgba(255, 255, 255, 0.03), 4px 4px 14px rgba(0, 0, 0, 0.55);
+  --neo-shadow-sm: -2px -2px 5px rgba(255, 255, 255, 0.03), 2px 2px 7px rgba(0, 0, 0, 0.45);
+  --neo-shadow-inset: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.02);
+  --neo-shadow-inset-sm: inset 1px 1px 3px rgba(0, 0, 0, 0.45), inset -1px -1px 3px rgba(255, 255, 255, 0.02);
 }
 
 @theme inline {
@@ -54,6 +62,19 @@
   --color-primary: var(--fg);
   --color-secondary: var(--fg-2);
   --color-tertiary: var(--fg-3);
+}
+
+@utility neo-shadow {
+  box-shadow: var(--neo-shadow);
+}
+@utility neo-shadow-sm {
+  box-shadow: var(--neo-shadow-sm);
+}
+@utility neo-shadow-inset {
+  box-shadow: var(--neo-shadow-inset);
+}
+@utility neo-shadow-inset-sm {
+  box-shadow: var(--neo-shadow-inset-sm);
 }
 
 body {

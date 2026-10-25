@@ -18,8 +18,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`dark ${inter.variable} h-full antialiased font-sans`}
       style={{ colorScheme: "dark" }}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground antialiased">{children}</body>
+      <body className="min-h-full flex flex-col bg-background text-foreground antialiased" suppressHydrationWarning>{children}</body>
     </html>
   );
 }

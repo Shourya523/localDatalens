@@ -7,7 +7,7 @@ import React from 'react'
 export default function Page() {
   return (
     <div className="min-h-screen bg-background text-text-primary flex flex-col selection:bg-accent/30 selection:text-white">
-      <Navbar />
+      <Navbar activePage="Home" />
 
       <main className="flex-1 flex items-center justify-center px-6 lg:px-12 xl:px-16 py-10 lg:py-16">
         <div className="max-w-[1560px] w-full mx-auto">
